@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Home () {
     return (
-        <Router>
+
         <div className="page">
             <h2 className="page-title">Home Page Title</h2>
             <div className="page-content">
@@ -14,7 +14,7 @@ function Home () {
                 </p>
             </div>
         </div>
-        </Router>
+
     )
 }
 

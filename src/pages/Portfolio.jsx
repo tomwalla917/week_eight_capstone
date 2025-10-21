@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Portfolio () {
     return (
-        <Router>
+
         <div className="page">
             <h2 className="page-title">Portfolio Title</h2>
             <div className="page-content">
@@ -14,7 +14,7 @@ function Portfolio () {
                 </p>
             </div>
         </div>
-        </Router>
+
     )
 }
 
