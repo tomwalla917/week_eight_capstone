@@ -12,6 +12,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,11 +31,21 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: #f8f9fa;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -87,29 +105,30 @@ button:focus-visible {
   transition: all 0.3s ease;
 }
 
-header{
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  background-color: #f8f9fa;
+
+
+.head{
+display: flex;
+justify-content: space-between;
+
 }
 
-.page-content{
-  background-color: #EFF9FF;
-  border-radius: 18px;
-  max-width: 70vw;
-}
+
 
 .projectCard{
   display: flex;
   justify-content: space-between;
+  margin: 2rem;
+  padding: 2rem;
+  gap: 2rem;
 
 }
 
 .prjDesc{
   display: flex;
   align-items: flex-start;
-  margin-left: 200px;
+  margin-left: 0;
+  flex:1;
 }
 
 .thumbnail{

@@ -15,8 +15,9 @@ function Home() {
                     and modern web technologies, I bring ideas to life through code.
                 </p>
                 <p>
-                    This is a paragraph on my home page.
+                Navigate to my portfolio page to see what I have worked on, and click on my contact page to connect!
                 </p>
+
             </div>
         </div>
 
