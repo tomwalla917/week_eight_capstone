@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom'
 
-function Portfolio () {
+function Portfolio() {
     return (
 
         <div className="page">
             <h2 className="page-title">Portfolio Title</h2>
             <div className="page-content">
-                <p>
-                    This is a paragraph on my portfolio page. 
-                </p>
-                <p>
-                    This is a paragraph on my portfolio page. 
-                </p>
+                <div className='projectCard'>
+                    <div className='thumbnail'>
+                        <p>Thumbnail</p>
+                    </div>
+                    <div className='prjDesc'>
+                        <p>Task Manager App
+                            A full-stack todo application with user authentication
+                            and real-time updates.
+                            Tech: React, Node.js, MongoDB
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 

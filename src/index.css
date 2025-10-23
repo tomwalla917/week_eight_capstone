@@ -93,3 +93,27 @@ header{
   justify-content: space-around;
   background-color: #f8f9fa;
 }
+
+.page-content{
+  background-color: #EFF9FF;
+  border-radius: 18px;
+  max-width: 70vw;
+}
+
+.projectCard{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.prjDesc{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 200px;
+}
+
+.thumbnail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
