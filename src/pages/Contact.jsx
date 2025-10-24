@@ -163,8 +163,33 @@ function Contact() {
                                 <button type="submit" className="btn btn-primary">Submit</button>
                             </form>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-7">
                             <h4>My resume</h4>
+                            <div className="resumeBox">
+                                    <h6>Thomas Wallace</h6>
+                                    <p>Full stack software developer</p>
+                                    <div className="resumeContact">
+                                        <p>✉️ email@gmail.com</p>
+                                        <p>📞 888-888-8888</p>
+                                        <p>https://github.com/tomwalla917</p>
+                                    </div>
+                                    <p className="resumeHeader">Skills</p>
+                                    <div className="resumeContact">
+                                        <p>C#</p>
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>SQL</p>
+                                        <p>React</p>
+                                        <p>TypeScript</p>
+                                    </div>
+                                    <p className="resumeHeader">Experience</p>
+                                    <p>Job history 1</p>
+                                    <p>Job history 2</p>
+                                    <p>Job history 3</p>
+                                    <p className="resumeHeader">Education</p>
+                                    <p>Education content</p>
+                            </div>
                         </div>
                     </div>
 

@@ -41,3 +41,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.resumeBox{
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.resumeContact{
+  display:flex;
+  justify-content: space-between;
+}
+.resumeHeader{
+  color:blue;
+  font-weight: bold;
+}
