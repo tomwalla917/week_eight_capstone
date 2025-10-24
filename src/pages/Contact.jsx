@@ -89,79 +89,80 @@ function Contact() {
 
                         <div className="col-md-5">
                             <h4>Get in touch with me</h4>
+                            <div className="box">
+                                <div className="col-md-12">
+                                    {submitStatus === 'success' && (
+                                        <div className="alert alert-success" role="alert">
+                                            Message sent </div>
+                                    )}
+                                </div>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="contactName" className="form-label">Name:</label>
+                                        <input
+                                            type="text"
+                                            className={`form-control ${errors.contactName ? 'is-invalid' : ''}`}
+                                            id="contactName"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.contactName && (
+                                            <div className="invalid-feedback">
+                                                {errors.contactName}
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="contactEmail" className="form-label">Your email address:</label>
+                                        <input
+                                            type="email"
+                                            className={`form-control ${errors.contactEmail ? 'is-invalid' : ''}`}
+                                            id="contactEmail"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            aria-describedby="emailHelp"
+                                        />
+                                        {errors.contactEmail && (
+                                            <div className="invalid-feedback">
+                                                {errors.contactEmail}
+                                            </div>
+                                        )}
+                                    </div>
+                                    {/*  put subject message here */}
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="contactSubject" className="form-label">Subject:</label>
+                                        <input
+                                            type="text"
+                                            className={`form-control ${errors.contactSubject ? 'is-invalid' : ''}`}
+                                            id="contactSubject"
+                                            value={formData.subject}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.contactSubject && (
+                                            <div className="invalid-feedback">
+                                                {errors.contactSubject}
+                                            </div>
+                                        )}
+                                    </div>
 
-                            <div className="col-md-12">
-                                {submitStatus === 'success' && (
-                                    <div className="alert alert-success" role="alert">
-                                        Message sent </div>
-                                )}
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="message" className="form-label">Message:</label>
+                                        <textarea
+                                            className={`form-control ${errors.message ? 'is-invalid' : ''}`}
+                                            id="contactMessage"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            rows="5"
+                                        ></textarea>
+                                        {errors.message && (
+                                            <div className="invalid-feedback">
+                                                {errors.message}
+                                            </div>
+                                        )}
+                                    </div>
+                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                </form>
                             </div>
-                            <form onSubmit={handleSubmit}>
-                                <div className="form-group mb-3">
-                                    <label htmlFor="contactName" className="form-label">Name:</label>
-                                    <input
-                                        type="text"
-                                        className={`form-control ${errors.contactName ? 'is-invalid' : ''}`}
-                                        id="contactName"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                    />
-                                    {errors.contactName && (
-                                        <div className="invalid-feedback">
-                                            {errors.contactName}
-                                        </div>
-                                    )}
-                                </div>
-                                <div className="form-group mb-3">
-                                    <label htmlFor="contactEmail" className="form-label">Your email address:</label>
-                                    <input
-                                        type="email"
-                                        className={`form-control ${errors.contactEmail ? 'is-invalid' : ''}`}
-                                        id="contactEmail"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        aria-describedby="emailHelp"
-                                    />
-                                    {errors.contactEmail && (
-                                        <div className="invalid-feedback">
-                                            {errors.contactEmail}
-                                        </div>
-                                    )}
-                                </div>
-                                {/*  put subject message here */}
-                                <div className="form-group mb-3">
-                                    <label htmlFor="contactSubject" className="form-label">Subject:</label>
-                                    <input
-                                        type="text"
-                                        className={`form-control ${errors.contactSubject ? 'is-invalid' : ''}`}
-                                        id="contactSubject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                    />
-                                    {errors.contactSubject && (
-                                        <div className="invalid-feedback">
-                                            {errors.contactSubject}
-                                        </div>
-                                    )}
-                                </div>
-
-                                <div className="form-group mb-3">
-                                    <label htmlFor="message" className="form-label">Message:</label>
-                                    <textarea
-                                        className={`form-control ${errors.message ? 'is-invalid' : ''}`}
-                                        id="contactMessage"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        rows="5"
-                                    ></textarea>
-                                    {errors.message && (
-                                        <div className="invalid-feedback">
-                                            {errors.message}
-                                        </div>
-                                    )}
-                                </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                            </form>
                         </div>
                         <div class="col-md-7">
                             <h4>My resume</h4>
