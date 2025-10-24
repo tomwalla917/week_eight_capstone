@@ -4,7 +4,7 @@ function Portfolio() {
     return (
 
         <div className="page">
-            <h2 className="page-title">Portfolio Title</h2>
+            <h2 className="page-title">Some of my projects</h2>
             <div className="page-content">
                 <div className='projectCard'>
                     <div className='thumbnail'>
