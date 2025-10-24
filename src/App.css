@@ -42,16 +42,23 @@
   color: #888;
 }
 
-.resumeBox{
+.box{
   background-color: white;
   border-radius: 15px;
   padding: 1rem;
 }
+.resumeBox{
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: smaller;
+}
 .resumeContact{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .resumeHeader{
   color:blue;
   font-weight: bold;
 }
+
