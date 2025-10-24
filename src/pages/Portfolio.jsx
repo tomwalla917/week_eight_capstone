@@ -4,8 +4,10 @@ function Portfolio() {
     return (
 
         <div className="page">
-            <h2 className="page-title">Some of my projects</h2>
+            
             <div className="page-content">
+                <div className="row mt-3">
+                    <h2 className="page-title">Some of my projects</h2>
                 <div className="box">
                     <div className='projectCard'>
                         <div className='thumbnail'>
@@ -67,6 +69,7 @@ function Portfolio() {
                             </p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

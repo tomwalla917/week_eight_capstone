@@ -85,7 +85,7 @@ function Contact() {
 
             <div className="page-content">
                 <div className="container">
-                    <div className="row mt-5">
+                    <div className="row mt-3">
 
                         <div className="col-md-5">
                             <h4>Get in touch with me</h4>
